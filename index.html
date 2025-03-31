@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Ícones</title>
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh; /* Define a altura da página */
+            display: flex;
+            flex-direction: row; /* Divide a página em seções */
+            background-image: url('./1nadine.jpg'); /* Caminho atualizado para a imagem */
+            background-size: cover; /* Faz a foto preencher o fundo */
+            background-position: right center; /* Posiciona a foto no lado direito */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+        }
+        .icon-container {
+            display: flex;
+            flex-direction: column; /* Alinha os ícones verticalmente */
+            align-items: flex-start; /* Coloca no canto esquerdo */
+            justify-content: center; /* Centraliza verticalmente */
+            gap: 25px; /* Espaçamento entre os ícones */
+            padding: 30px; /* Espaçamento interno */
+            width: 35%; /* Define o espaço ocupado pelos ícones */
+            background-color: rgba(255, 192, 203, 0.85); /* Fundo rosa translúcido */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao painel */
+        }
+        .icon-container a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8em;
+            padding: 15px 25px;
+            border-radius: 12px;
+            width: 220px; /* Largura dos botões */
+            text-align: center; /* Centraliza o texto dos ícones */
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra nos botões */
+            transition: transform 0.3s, box-shadow 0.3s; /* Animação ao passar o mouse */
+        }
+        .icon-container a:hover {
+            transform: scale(1.1); /* Efeito de crescimento no hover */
+            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4); /* Intensifica a sombra */
+        }
+        .icon-container a.facebook {
+            background-color: #3b5998;
+        }
+        .icon-container a.instagram {
+            background-color: #e4405f;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-container">
+        <a href="https://www.facebook.com/nadine.polido?locale=pt_BR" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/nadinepolidoo/" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.instagram.com/fononadinepolido/" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+</body>
+</html>
