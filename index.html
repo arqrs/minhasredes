@@ -13,7 +13,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: row;
-            background-image: url('1nadine.jpg'); /* Certifique-se de que a imagem está correta */
+            background-image: url('1nadine.jpg'); /* Certifique-se de que o arquivo da imagem está correto */
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -21,22 +21,21 @@
         .icon-container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 2rem;
-            padding: 2rem;
-            width: 100%; /* Ocupa espaço total no celular */
-            max-width: 400px; /* Limita a largura em telas grandes */
-            background-color: rgba(255, 192, 203, 0.85);
+            align-items: flex-start; /* Alinha os ícones à esquerda */
+            justify-content: center; /* Centraliza verticalmente */
+            gap: 1.5rem; /* Espaçamento entre os ícones */
+            padding: 1.5rem;
+            width: 35%; /* Inicialmente ocupa 35% da largura */
+            background-color: rgba(211, 211, 211, 0.9); /* Fundo cinza claro translúcido */
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
         .icon-container a {
             text-decoration: none;
             color: #fff;
-            font-size: 1.8em;
-            padding: 15px 25px;
+            font-size: 1.5em;
+            padding: 10px 20px;
             border-radius: 12px;
-            width: 100%; /* Botões se ajustam ao container */
+            width: 100%; /* Botões se ajustam automaticamente */
             text-align: center;
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s, box-shadow 0.3s;
@@ -53,6 +52,17 @@
         }
         .icon-container a.whatsapp {
             background-color: #25D366;
+        }
+
+        /* CSS Responsivo */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column; /* Alinha os elementos na vertical */
+            }
+            .icon-container {
+                width: 90%; /* Ocupa quase toda a largura no celular */
+                margin: 0 auto; /* Centraliza horizontalmente */
+            }
         }
     </style>
 </head>
