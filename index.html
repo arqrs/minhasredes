@@ -12,8 +12,8 @@
             margin: 0;
             min-height: 100vh;
             display: flex;
-            flex-direction: row;
-            background-image: url('1nadine.jpg'); /* Certifique-se de que o arquivo da imagem está correto */
+            flex-direction: row; /* Mantém o contêiner no lado esquerdo */
+            background-image: url('1nadine.jpg'); /* Certifique-se de que a imagem está correta */
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -25,8 +25,9 @@
             justify-content: center; /* Centraliza verticalmente */
             gap: 1.5rem; /* Espaçamento entre os ícones */
             padding: 1.5rem;
-            width: 35%; /* Inicialmente ocupa 35% da largura */
-            background-color: rgba(211, 211, 211, 0.9); /* Fundo cinza claro translúcido */
+            width: 30%; /* Garante que o contêiner ocupe a parte esquerda */
+            height: 100vh; /* Preenche toda a altura da tela */
+            background-color: rgba(211, 211, 211, 0.9); /* Fundo cinza claro */
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
         .icon-container a {
@@ -56,12 +57,8 @@
 
         /* CSS Responsivo */
         @media (max-width: 768px) {
-            body {
-                flex-direction: column; /* Alinha os elementos na vertical */
-            }
             .icon-container {
-                width: 90%; /* Ocupa quase toda a largura no celular */
-                margin: 0 auto; /* Centraliza horizontalmente */
+                width: 35%; /* Mantém o contêiner fixo no lado esquerdo em telas menores */
             }
         }
     </style>
