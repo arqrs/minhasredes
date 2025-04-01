@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Ícones</title>
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            min-height: 100vh; /* Ocupa toda a altura */
+            background-image: url('1nadine.jpg'); /* Fundo da página */
+            background-size: cover;
+            background-position: center;
+        }
+        .icon-container {
+            width: 30%; /* Lado esquerdo fixo */
+            height: 100vh; /* Preenche altura total */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            gap: 15px; /* Espaçamento entre os ícones */
+        }
+        .icon-container a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 15px;
+            background: #3b5998; /* Cor padrão (Facebook) */
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .icon-container a.instagram {
+            background: #e4405f;
+        }
+        .icon-container a.whatsapp {
+            background: #25D366;
+        }
+        .icon-container a:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        <source src="musica.ogg" type="audio/ogg">
+    </audio>
+
+    <div class="icon-container">
+        <a href="https://www.facebook.com/nadine.polido?locale=pt_BR" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/clinica_diamanteitaperuna?igsh=MWRjam04ejBlamhweA==" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Instagram Clínica
+        </a>
+        <a href="https://www.instagram.com/nadinepolidoo/" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://wa.me/5522997194923" target="_blank" class="whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+</body>
+</html>
