@@ -10,24 +10,25 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            height: 100vh; /* Define a altura da página */
+            min-height: 100vh;
             display: flex;
-            flex-direction: row; /* Divide a página em seções */
-            background-image: url('1nadine.jpg'); /* Certifique-se de que o arquivo da imagem está na pasta correta */
-            background-size: cover; /* Faz a foto preencher o fundo */
-            background-position: right center; /* Posiciona a foto no lado direito */
-            background-repeat: no-repeat; /* Evita repetição da imagem */
+            flex-direction: row;
+            background-image: url('1nadine.jpg'); /* Certifique-se de que a imagem está correta */
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
         .icon-container {
             display: flex;
-            flex-direction: column; /* Alinha os ícones verticalmente */
-            align-items: flex-start; /* Coloca no canto esquerdo */
-            justify-content: center; /* Centraliza verticalmente */
-            gap: 25px; /* Espaçamento entre os ícones */
-            padding: 30px; /* Espaçamento interno */
-            width: 35%; /* Define o espaço ocupado pelos ícones */
-            background-color: rgba(255, 192, 203, 0.85); /* Fundo rosa translúcido */
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao painel */
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            width: 100%; /* Ocupa espaço total no celular */
+            max-width: 400px; /* Limita a largura em telas grandes */
+            background-color: rgba(255, 192, 203, 0.85);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
         .icon-container a {
             text-decoration: none;
@@ -35,14 +36,14 @@
             font-size: 1.8em;
             padding: 15px 25px;
             border-radius: 12px;
-            width: 220px; /* Largura dos botões */
-            text-align: center; /* Centraliza o texto dos ícones */
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra nos botões */
-            transition: transform 0.3s, box-shadow 0.3s; /* Animação ao passar o mouse */
+            width: 100%; /* Botões se ajustam ao container */
+            text-align: center;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .icon-container a:hover {
-            transform: scale(1.1); /* Efeito de crescimento no hover */
-            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4); /* Intensifica a sombra */
+            transform: scale(1.1);
+            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);
         }
         .icon-container a.facebook {
             background-color: #3b5998;
@@ -51,16 +52,15 @@
             background-color: #e4405f;
         }
         .icon-container a.whatsapp {
-            background-color: #25D366; /* Cor verde do WhatsApp */
+            background-color: #25D366;
         }
     </style>
 </head>
 <body>
-    <!-- Adicionando música de fundo com múltiplos formatos -->
-    <audio autoplay loop controls>
+    <!-- Adicionando música automática -->
+    <audio autoplay loop>
         <source src="musica.mp3" type="audio/mpeg">
         <source src="musica.ogg" type="audio/ogg">
-        
     </audio>
 
     <div class="icon-container">
@@ -70,7 +70,7 @@
         <a href="https://www.instagram.com/clinica_diamanteitaperuna?igsh=MWRjam04ejBlamhweA==" target="_blank" class="instagram">
             <i class="fab fa-instagram"></i> Instagram Clínica
         </a>
-        <a href="https://www.instagram.com/fononadinepolido/" target="_blank" class="instagram">
+        <a href="https://www.instagram.com/nadinepolidoo/" target="_blank" class="instagram">
             <i class="fab fa-instagram"></i> Instagram
         </a>
         <a href="https://wa.me/5522997194923" target="_blank" class="whatsapp">
